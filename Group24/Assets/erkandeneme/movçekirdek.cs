@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class movçekirdek : MonoBehaviour
 {
-    private float hiz = 10;
+    public float hiz = 5f;
     private Rigidbody rb;
-    // Start is called before the first frame update
+    private float slowedSpeed;
+    private bool isOnHoney = false;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        slowedSpeed = hiz - 3f;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         float yatayHareket = Input.GetAxis("Horizontal");
@@ -22,5 +26,30 @@ public class movçekirdek : MonoBehaviour
 
         rb.AddForce(hareket * hiz);
 
+        if (isOnHoney)
+        {
+            rb.velocity = hareket * slowedSpeed;
+        }
+        else
+        {
+            rb.velocity = hareket * hiz;
+        }
+
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Honey"))
+        {
+            isOnHoney = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Honey"))
+        {
+            isOnHoney = false;
+        }
     }
 }
