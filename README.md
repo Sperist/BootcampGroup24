@@ -54,3 +54,5 @@
 # Product Backlog URL
 
 https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96ADE/unity-bootcamp-group24
+![kopekler](https://github.com/Sperist/BootcampGroup24/assets/163539999/ddcead9e-d4b3-47d9-81ec-f6b288be342e)
+
