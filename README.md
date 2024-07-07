@@ -1,8 +1,8 @@
-Takım İsmi
+# Takım İsmi
 
 •	U24 Unity Takımı
 
-Takım Üyeleri
+# Takım Üyeleri
 
 •	Erdem Naz - Scrum Master
 
@@ -16,20 +16,20 @@ Takım Üyeleri
 
 
 
-Ürün İle İlgili Bilgiler
+# Ürün İle İlgili Bilgiler
 
 
-Ürün İsmi
+# Ürün İsmi
 
 •	Ecovado: Bee Savior
 
 
-Ürün Açıklaması
+# Ürün Açıklaması
 
 •	Kahraman avokadonun, kötü niyetli yetiştiricilerin elinden arıları kurtarmak için çıktığı heyecan dolu maceraya katılın! Zehirlenmiş arılara panzehirler bulun, zorlu bulmacaları çözün ve doğanın dengesini yeniden kurun. Arıları kurtararak ekosistemi koruyun ve bu destansı serüvende doğanın gerçek kahramanı olun!
 
 
-Ürün Özellikleri
+# Ürün Özellikleri
 
 •	3D
 
@@ -42,7 +42,7 @@ Takım Üyeleri
 •	Eco Friendly
 
 
-Hedef Kitle
+# Hedef Kitle
 
 •	Genel Kitle
 
@@ -51,6 +51,6 @@ Hedef Kitle
 •	Pc Oyuncuları
 
 
-Product Backlog URL
+# Product Backlog URL
 
 https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96ADE/unity-bootcamp-group24
