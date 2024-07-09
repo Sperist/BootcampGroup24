@@ -65,8 +65,8 @@ https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96AD
   - Planlama ve görev atama yapıldı.
   - Oyunun temel kodlarının yazımına başlandı.
 - **Karşılaşılan sorunlar ve çözümler:**
-  -Githubta yapılan değişikliklerin çakışmaması için branch sisteminin kullanılmasına karar verildi.
-  -Oyunun içindeki bulmaca bölümünün kod yazımı vakit alacağı için bulmaca kodlarının yazılması görevi ileri tarihlere ertelendi.
+  - Githubta yapılan değişikliklerin çakışmaması için branch sisteminin kullanılmasına karar verildi.
+  - Oyunun içindeki bulmaca bölümünün kod yazımı vakit alacağı için bulmaca kodlarının yazılması görevi ileri tarihlere ertelendi.
 - **Alınan kararlar:**
   - Proje yönetim aracı olarak Trello tercih edildi.
   - Görevler ve ayrıntıları Trello'dan her gün takip edilmektedir.
