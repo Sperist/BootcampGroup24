@@ -85,7 +85,7 @@ https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96AD
 
 ![image](https://github.com/Sperist/BootcampGroup24/assets/163539999/1f355961-d5f3-4608-9bb0-4002fa51d28e)
 
-*Sprint Review:**
+**Sprint Review:**
   - Ana karakter belirlendi.
   - Ana hikaye oluşturuldu.
   - Görevlerin Trello'da planlanması ve atanması kararlaştırıldı.
