@@ -1,3 +1,5 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,17 +33,15 @@ public class DialogueTrigger : MonoBehaviour
         DialogueManager.Instance.StartDialogue(dialogue);
     }
 
-    private void OnTriggerEnter(Collider collision) //colliderýn içine girince çalýþsýn
+    private void OnTriggerEnter(Collider other) //colliderýn içine girince çalýþsýn
     {
-        if(collision.tag == "Player")
+        if(other.tag == "Player")
         {
             TriggerDialogue();
         }
     }
-    {
             
-    }
-}
+ }
 
 // konuþacaðýmýz kiþinin üstüne koyacaðýz bu scripti listeyi oluþturacaðýz
 // ayrýca collider eklememiz lazým o kiþiye (is Trigger ý açmayý unutma)

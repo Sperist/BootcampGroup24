@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -21,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
 
-    void Start()
+    void Awake()
     {
         if (Instance == null)
             Instance = this;
@@ -29,9 +30,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        isDialogueActive=true;
+       
+        isDialogueActive = true;
 
-        animator.Play("DialogueOpen");
+        animator.SetBool("isOpen", true);
 
         lines.Clear();
         
@@ -39,6 +41,7 @@ public class DialogueManager : MonoBehaviour
         {
             lines.Enqueue(dialogueLine);
         }
+
         DisplayNextDialogueLine();
     }
 
@@ -61,6 +64,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         dialogueArea.text = "";
+
         foreach(char letter in dialogueLine.line.ToCharArray())
         {
             dialogueArea.text += letter;
@@ -70,6 +74,11 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isDialogueActive = false;
-        animator.Play("DialogueClose");
+        animator.SetBool("isOpen", false);
     }
 }
+
+//dialogueBox a at
+//*/
+
+
