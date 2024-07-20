@@ -107,9 +107,9 @@ https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96AD
 - **Tamamlanan işler:**
   -	Tasarımı yapılan ana karakter animasyonları da hazır hale getirildi
   -	Oyunun sonunda yer alacak yapay zekaya karşı oynanan puzzle tamamlandı
-  -	1. Bölümün modellemesi ve çevre tasarımı tamamlandı
-  -	2. Bölümün level tasarımı taslak olarak yapıldı
-  -	3. Bölümde belirlenemeyen düşman fikri belirlendi
+  -	Bölüm 1'in modellemesi ve çevre tasarımı tamamlandı
+  -	Bölüm 2'nin level tasarımı taslak olarak yapıldı
+  -	Bölüm 3'te belirlenemeyen düşman fikri belirlendi
        
 - **Karşılaşılan sorunlar ve çözümler:**
   -	Takım üyesinin yaşadığı sağlık sorunlarından dolayı bazı görevler gecikti ve diğer sprintte bu eksikliğin kapatılmasına karar verildi.
