@@ -1,6 +1,6 @@
 # Takım İsmi
 
-•	U24 Unity Takımı
+•	Echo Team
 
 # Takım Üyeleri
 
