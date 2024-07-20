@@ -123,6 +123,115 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &78338348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 78338354}
+  - component: {fileID: 78338353}
+  - component: {fileID: 78338352}
+  - component: {fileID: 78338351}
+  m_Layer: 0
+  m_Name: "Yaral\u0131Ar\u0131"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &78338351
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78338348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &78338352
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78338348}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &78338353
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78338348}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &78338354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78338348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.378, y: -0.033, z: 3.676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1203978056}
+  - {fileID: 721423842}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &175490915
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +465,129 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235985369}
   m_CullTransparentMesh: 1
+--- !u!1 &239864854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239864855}
+  - component: {fileID: 239864857}
+  - component: {fileID: 239864856}
+  m_Layer: 0
+  m_Name: alan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239864855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239864854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.38, y: 3.814993, z: -1.67}
+  m_LocalScale: {x: 1, y: 1, z: 0.92774}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1547892591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239864856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239864854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: "TOMB\u0130K ARI"
+        icon: {fileID: 21300000, guid: 9fce1f16206783d4eb425de453e04298, type: 3}
+      line: "Karde\u015Fin nas\u0131l oldu?"
+    - character:
+        name: SISKA ARI
+        icon: {fileID: 21300000, guid: 5612527cb9623174abc417022408c6a0, type: 3}
+      line: "Pek iyi de\u011Fil hala hasta."
+    - character:
+        name: "TOMB\u0130K ARI"
+        icon: {fileID: 21300000, guid: 9fce1f16206783d4eb425de453e04298, type: 3}
+      line: "Hep o avokadolar y\xFCz\xFCnden."
+    - character:
+        name: SISKA ARI
+        icon: {fileID: 21300000, guid: 5612527cb9623174abc417022408c6a0, type: 3}
+      line: "Neden onlar y\xFCz\xFCnden ac\u0131 \xE7ekiyoruz ki?"
+    - character:
+        name: "TOMB\u0130K ARI"
+        icon: {fileID: 21300000, guid: 9fce1f16206783d4eb425de453e04298, type: 3}
+      line: "Bilmiyorum ama bu hi\xE7 adil de\u011Fil."
+    - character:
+        name: SISKA ARI
+        icon: {fileID: 21300000, guid: 5612527cb9623174abc417022408c6a0, type: 3}
+      line: "Krali\xE7e ar\u0131 hala bir \xE7\xF6z\xFCm bulamad\u0131."
+    - character:
+        name: "TOMB\u0130K ARI"
+        icon: {fileID: 21300000, guid: 9fce1f16206783d4eb425de453e04298, type: 3}
+      line: "Bir \u015Fey yapmam\u0131za da izin vermiyor ki hep avokadolar\u0131n
+        taraf\u0131n\u0131 tutuyor."
+    - character:
+        name: SISKA ARI
+        icon: {fileID: 21300000, guid: 5612527cb9623174abc417022408c6a0, type: 3}
+      line: "Bizi panzehirlerin pe\u015Finden g\xF6nderdi ama nerde olduklar\u0131na
+        dair en ufak bir fikrimiz bile yok!"
+    - character:
+        name: "TOMB\u0130K ARI"
+        icon: {fileID: 21300000, guid: 9fce1f16206783d4eb425de453e04298, type: 3}
+      line: "Hey! \xDCmidini kaybetme. Elbet bulaca\u011F\u0131z."
+    - character:
+        name: SISKA ARI
+        icon: {fileID: 21300000, guid: 5612527cb9623174abc417022408c6a0, type: 3}
+      line: Aramaya devam edelim o zaman.
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "(Bizden neden \u015F\xFCphelendiklerini anlam\u0131yorum. Ne yapt\u0131k
+        ki?)"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: 
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: " \u015Eu krali\xE7e ar\u0131 ile konu\u015Fsam iyi olacak."
+--- !u!65 &239864857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239864854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 4.3753242}
+  m_Center: {x: 0, y: 0, z: -1.7421335}
 --- !u!1 &243161295
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,8 +899,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: AVOKADO
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
-  m_sharedMaterial: {fileID: -7065205012359924215, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e3a01a918586844abafc258f8b4ec9c, type: 2}
+  m_sharedMaterial: {fileID: 7730065818164305682, guid: 1e3a01a918586844abafc258f8b4ec9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -842,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 569776844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 0, z: -0.63}
+  m_LocalPosition: {x: -4.97, y: 0, z: -8.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1068,6 +1300,255 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &721423841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721423842}
+  - component: {fileID: 721423844}
+  - component: {fileID: 721423843}
+  m_Layer: 0
+  m_Name: "Ikinci Konu\u015Fma"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721423842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721423841}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 78338354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &721423843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721423841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "\u015Eimdi daha iyi misin?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Evet daha iyiyim. Sana ne kadar te\u015Fekk\xFCr etsem azd\u0131r avokado
+        dostum."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "\xD6nemli de\u011Fil. Neler oldu\u011Funu anlat sadece."
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Bah\xE7\u0131van bize bir t\xFCr ila\xE7 veriyor. "
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Ne ilac\u0131 tam olarak?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Ben de tam olarak ne oldu\u011Funu bilmiyorum ama benim gibi bir\xE7ok
+        ar\u0131 bu ila\xE7lardan k\xF6t\xFC etkileniyor."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Bu \xE7ok yanl\u0131\u015F."
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Yolun sonunda kovan\u0131m\u0131z var ve kovan\u0131n i\xE7inde bir\xE7ok
+        k\xF6t\xFC durumda olan ar\u0131 arkada\u015F\u0131m var. "
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Onlar\u0131n da panzehire ihtiya\xE7lar\u0131 var. "
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Panzehirlerin nerede oldu\u011Funu biliyorum ama ben ona ula\u015Fam\u0131yorum."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: Neredeler ki?
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\u0130htiyar k\xF6stebe\u011Fin yuvas\u0131nda. "
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "K\xF6stebek mi?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Evet, k\xF6pr\xFCy\xFC ge\xE7tikten sonra ilerlersen koca bir k\xF6stebek
+        deli\u011Fini g\xF6receksin."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Ben ne yapabilirim ki? Tek ba\u015F\u0131ma onun \xFCstesinden nas\u0131l
+        gelece\u011Fim?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Korkma o koca k\xF6stebek \xE7ok ya\u015Fl\u0131. Bu y\xFCzden olduk\xE7a
+        yava\u015F. L\xFCtfen tek umudumuz sensin bize yard\u0131m et."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Tamam elimden geleni yapaca\u011F\u0131m."
+--- !u!65 &721423844
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721423841}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3423867, y: 1, z: 2.3963869}
+  m_Center: {x: -0.6711935, y: 0, z: -0.15666759}
+--- !u!1 &741769058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741769059}
+  - component: {fileID: 741769062}
+  - component: {fileID: 741769061}
+  - component: {fileID: 741769060}
+  m_Layer: 0
+  m_Name: "Ta\u015F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741769059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741769058}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8898664, y: 3.814993, z: 1.0600376}
+  m_LocalScale: {x: 3.256681, y: 1.0188476, z: 6.7145476}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1547892591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &741769060
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741769058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &741769061
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741769058}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cbcd01aff88497b48924afebe1ccc5cf, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &741769062
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741769058}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &884961082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1612,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  - {fileID: 2100000, guid: e1c8c0d64e7cac844a07bee5036c88f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1310,6 +1791,10 @@ MonoBehaviour:
       line: "Ama bah\xE7\u0131vana dikkat etmemiz laz\u0131m. E\u011Fer yakalan\u0131rsak
         kimseyi kurtaramay\u0131z."
     - character:
+        name: 
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: 
+    - character:
         name: AVOKADO
         icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
       line: "Elimden geleni yapaca\u011F\u0131m."
@@ -1388,6 +1873,280 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185660263}
   m_CullTransparentMesh: 1
+--- !u!1 &1203978055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203978056}
+  - component: {fileID: 1203978058}
+  - component: {fileID: 1203978057}
+  m_Layer: 0
+  m_Name: "Ilk Konu\u015Fma"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1203978056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203978055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.626, y: 0, z: -0.886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 78338354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1203978057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203978055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Yard\u0131m et l\xFCtfen."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: Hey ne oldu sana??
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "O yapt\u0131. "
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: O kim?
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "O! Bah\xE7\u0131van!"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Bah\xE7\u0131van m\u0131!? Ne yapt\u0131 sana."
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Bana, yani bize ila\xE7 veriyor. L\xFCtfen yard\u0131m et."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Ne ilac\u0131? Siz kimsiniz?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Anlataca\u011F\u0131m ama \xF6nce l\xFCtfen bana ya\u015Famam i\xE7in
+        panzehir getir."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: Panzehir nerden bulabilirim ki?
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "K\xF6pr\xFCn\xFCn kar\u015F\u0131s\u0131nda bah\xE7\u0131van\u0131n
+        \xE7antas\u0131 olmas\u0131 laz\u0131m. Onun i\xE7inde panzehirler var."
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\xC7antay\u0131 a\xE7mak i\xE7in bir \u015Feyler aramaya bu tarafa ge\xE7tim
+        ama k\xF6pr\xFC y\u0131k\u0131ld\u0131."
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\u015Eimdi de k\xF6pr\xFCy\xFC tamir edip kar\u015F\u0131 tarafa ge\xE7ecek
+        g\xFCc\xFCm yok. L\xFCtfen yard\u0131m et."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Tamam merak etme seni kurtaraca\u011F\u0131m."
+    - character:
+        name: 
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: 
+--- !u!65 &1203978058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203978055}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.049203, y: 1, z: 2.048355}
+  m_Center: {x: 0.52460134, y: 0, z: 0.592366}
+--- !u!1 &1367617190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367617191}
+  - component: {fileID: 1367617194}
+  - component: {fileID: 1367617193}
+  - component: {fileID: 1367617192}
+  m_Layer: 0
+  m_Name: "ar\u0131 2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367617191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367617190}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7501335, y: 3.814993, z: -2.259962}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1547892591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1367617192
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367617190}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1367617193
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367617190}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1367617194
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367617190}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1547892590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547892591}
+  m_Layer: 0
+  m_Name: "Gardiyan Ar\u0131lar"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547892591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547892590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.9498663, y: -3.444993, z: 11.5699625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 741769059}
+  - {fileID: 1736707452}
+  - {fileID: 1367617191}
+  - {fileID: 239864855}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589977502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +2223,261 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589977502}
   m_CullTransparentMesh: 1
+--- !u!1 &1662015764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662015770}
+  - component: {fileID: 1662015769}
+  - component: {fileID: 1662015768}
+  - component: {fileID: 1662015767}
+  - component: {fileID: 1662015766}
+  - component: {fileID: 1662015765}
+  m_Layer: 0
+  m_Name: "kovandaki iyile\u015Ftirdi\u011Fimiz ar\u0131lar"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1662015765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\xC7ok te\u015Fekk\xFCr ederim."
+--- !u!65 &1662015766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6105113, y: 2.8565276, z: 1.1991392}
+  m_Center: {x: 1.1122196, y: 0.28435874, z: 0.09957079}
+--- !u!136 &1662015767
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1662015768
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1662015769
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1662015770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662015764}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7056416, y: 0.045495782, z: -0.045495782, w: 0.7056416}
+  m_LocalPosition: {x: -7.03, y: 0.2, z: -12.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -55.052, z: -62.43}
+--- !u!1 &1736707451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736707452}
+  - component: {fileID: 1736707455}
+  - component: {fileID: 1736707454}
+  - component: {fileID: 1736707453}
+  m_Layer: 0
+  m_Name: "ar\u0131 1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1736707452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736707451}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7501335, y: 3.814993, z: 0.8100376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1547892591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1736707453
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736707451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1736707454
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736707451}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1736707455
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736707451}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1771554049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,8 +2719,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Merhaba kralicem. Ben yardim icin gelen bir avokadoyum. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
-  m_sharedMaterial: {fileID: -7065205012359924215, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e3a01a918586844abafc258f8b4ec9c, type: 2}
+  m_sharedMaterial: {fileID: 7730065818164305682, guid: 1e3a01a918586844abafc258f8b4ec9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1730,8 +2744,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33
-  m_fontSizeBase: 33
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1780,6 +2794,166 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979309614}
   m_CullTransparentMesh: 1
+--- !u!1 &1999047984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999047990}
+  - component: {fileID: 1999047989}
+  - component: {fileID: 1999047988}
+  - component: {fileID: 1999047987}
+  - component: {fileID: 1999047986}
+  - component: {fileID: 1999047985}
+  m_Layer: 0
+  m_Name: "Krali\xE7e ar\u0131 nerde?"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1999047985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\xC7ok te\u015Fekk\xFCr ederim."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Krali\xE7e ar\u0131 nerede?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Odas\u0131 en \xFCst katta."
+    - character:
+        name: 
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: 
+--- !u!65 &1999047986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6105113, y: 2.8565276, z: 1.1991392}
+  m_Center: {x: 1.1122196, y: 0.28435874, z: 0.09957079}
+--- !u!136 &1999047987
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1999047988
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c6b36aa5db10df4f932dc10721667b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1999047989
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1999047990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999047984}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7056416, y: 0.045495782, z: -0.045495782, w: 0.7056416}
+  m_LocalPosition: {x: -6.59, y: 0.2, z: -8.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -55.052, z: -62.43}
 --- !u!1 &2000695453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,3 +3504,7 @@ SceneRoots:
   - {fileID: 884961086}
   - {fileID: 569776850}
   - {fileID: 1771554053}
+  - {fileID: 78338354}
+  - {fileID: 1547892591}
+  - {fileID: 1999047990}
+  - {fileID: 1662015770}
