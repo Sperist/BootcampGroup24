@@ -55,7 +55,7 @@
 
 https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96ADE/unity-bootcamp-group24
 
-# Sprint 2
+# Sprint 1
 
 **Sprint Notları:**
 - **Hedefler:** Ana karakterin belirlenmesi, ana hikayenin oluşturulması, planlama ve görev atama, kod yazımına giriş
@@ -98,9 +98,12 @@ https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96AD
   - Ana karakterin hızlı bir şekilde belirlenmesi ve hikayenin etkin bir şekilde oluşturulmuş olması projenin ilerleyişini hızlandırmıştır.
   - İlerleyen tarihe ertelenen bulmaca için yapay zeka desteği getirilmesine karar verildi.
 
+# Sprint 2
+
 **Sprint Notları:**
 - **Hedefler:** Çevre Düzenlemenin bitmiş olması, 3 seviye ayrılan oyunun ilk bölümünün mekaniklerinin tamamlanmış olması, hikayenin tamamen oluşturulması ve hikayede herhangi pürüz kalmaması,
   Sprintte tamamlanması hedeflenen backlog puanı 20
+  
 - **Tamamlanan işler:**
   -	Tasarımı yapılan ana karakter animasyonları da hazır hale getirildi
   -	Oyunun sonunda yer alacak yapay zekaya karşı oynanan puzzle tamamlandı
