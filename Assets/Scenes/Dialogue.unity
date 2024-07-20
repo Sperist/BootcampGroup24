@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 175490920}
   - component: {fileID: 175490919}
   - component: {fileID: 175490918}
-  - component: {fileID: 175490917}
   - component: {fileID: 175490916}
   m_Layer: 5
   m_Name: DialogueBox 2
@@ -164,23 +163,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &175490917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175490915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491ca300f44bc7246b6b400ad4821980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 2049949544}
-  dialogueText: {fileID: 472404167}
-  character: {fileID: 2002505470}
-  animator: {fileID: 175490916}
-  dialoguePanels: []
 --- !u!114 &175490918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -70}
+  m_AnchoredPosition: {x: 0, y: -383}
   m_SizeDelta: {x: 1140, y: 448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &235985369
@@ -324,9 +306,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 633805058}
+      - m_Target: {fileID: 243161298}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: DisplayNextSentence
+        m_MethodName: DisplayNextDialogueLine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -374,6 +356,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235985369}
   m_CullTransparentMesh: 1
+--- !u!1 &243161295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243161297}
+  - component: {fileID: 243161298}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &243161297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243161295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &243161298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243161295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491ca300f44bc7246b6b400ad4821980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterIcon: {fileID: 1185660265}
+  characterName: {fileID: 503964318}
+  dialogueArea: {fileID: 1979309616}
+  nextButton: {fileID: 235985371}
+  typingSpeed: 0.05
+  animator: {fileID: 633805057}
 --- !u!1 &462747488
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +486,7 @@ GameObject:
   - component: {fileID: 472404168}
   - component: {fileID: 472404167}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DialogueText 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sen de kimsin neler oluyor burada?
+  m_text: Bu diyalog panelini iptal ettim :/
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
   m_sharedMaterial: {fileID: -7065205012359924215, guid: cdbac1b1f8e0bd245b79f3eac8118ad3, type: 2}
@@ -588,7 +620,7 @@ GameObject:
   - component: {fileID: 503964319}
   - component: {fileID: 503964318}
   m_Layer: 5
-  m_Name: Name (text)
+  m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,7 +842,7 @@ Transform:
   m_GameObject: {fileID: 569776844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 0, z: -0.63}
+  m_LocalPosition: {x: 0.67, y: 0, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -854,7 +886,6 @@ GameObject:
   - component: {fileID: 633805054}
   - component: {fileID: 633805056}
   - component: {fileID: 633805055}
-  - component: {fileID: 633805058}
   - component: {fileID: 633805057}
   m_Layer: 5
   m_Name: DialogueBox 1
@@ -883,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -217}
   m_SizeDelta: {x: 1140, y: 448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633805055
@@ -945,23 +976,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &633805058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633805053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491ca300f44bc7246b6b400ad4821980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 503964318}
-  dialogueText: {fileID: 1979309616}
-  character: {fileID: 1185660265}
-  animator: {fileID: 633805057}
-  dialoguePanels: []
 --- !u!1 &672146684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,10 +1081,10 @@ GameObject:
   - component: {fileID: 884961084}
   - component: {fileID: 884961083}
   - component: {fileID: 884961087}
-  - component: {fileID: 884961088}
+  - component: {fileID: 884961091}
   - component: {fileID: 884961089}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: Queen
   m_TagString: queen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1189,35 +1203,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &884961088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884961082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-        dialoguePanel: {fileID: 633805053}
-      sentence: Ben avokadoyum.
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-        dialoguePanel: {fileID: 175490915}
-      sentence: hahaha
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-        dialoguePanel: {fileID: 175490915}
-      sentence: "b\xFCt\xFCn bu olanlar da neyin nesi?\n"
 --- !u!136 &884961089
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1241,6 +1226,93 @@ CapsuleCollider:
   m_Height: 1.5009563
   m_Direction: 1
   m_Center: {x: 0.034155607, y: 0.027880669, z: -0.08288556}
+--- !u!114 &884961091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884961082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: Sen kimsin? Neden buraya geldin?
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Merhaba krali\xE7em. Ben yard\u0131m i\xE7in gelen bir avokadoyum. "
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Ar\u0131lar\u0131m\u0131n senin hakk\u0131ndaki d\xFC\u015F\xFCncelerini
+        biliyorsun de\u011Fil mi?"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Evet tam da bu y\xFCzden geldim. Neden b\xF6yle d\xFC\u015F\xFCnd\xFCklerini
+        anlayam\u0131yorum."
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Asl\u0131nda ar\u0131lar durumu tam olarak bilmiyor?"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Nas\u0131l yani?"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Birka\xE7 ay \xF6nce bizim bak\u0131m\u0131m\u0131z\u0131 yapan bah\xE7\u0131van
+        tozla\u015Fmay\u0131 artt\u0131r\u0131p daha fazla avokado \xFCretebilmek
+        i\xE7in"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "\xFCzerimizde ila\xE7lar kulland\u0131. Ne yaz\u0131k ki baz\u0131lar\u0131m\u0131z
+        bu ila\xE7tan k\xF6t\xFC etkilendik."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Yani di\u011Fer ar\u0131lar s\u0131rf bu y\xFCzden bizleri mi su\xE7luyor?
+        Bu bir sa\xE7mal\u0131k!"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Maalesef ki \xF6yle. Ama sen her \u015Feyi de\u011Fi\u015Ftirebilirsin."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: Ne yapabilirim ki?
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Bu zehirli yerden bir an \xF6nce kurtulmam\u0131z laz\u0131m. Bah\xE7enin
+        d\u0131\u015F\u0131nda ormanl\u0131k alanda bo\u015F bir kovan var. "
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Beni oraya ula\u015Ft\u0131rabilirsen bizim kahraman\u0131m\u0131z olmu\u015F
+        olursun."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Peki tamam seni oraya sa\u011F salim ula\u015Ft\u0131raca\u011F\u0131m."
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Ama bah\xE7\u0131vana dikkat etmemiz laz\u0131m. E\u011Fer yakalan\u0131rsak
+        kimseyi kurtaramay\u0131z."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Elimden geleni yapaca\u011F\u0131m."
 --- !u!1 &1185660263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,7 +1325,7 @@ GameObject:
   - component: {fileID: 1185660266}
   - component: {fileID: 1185660265}
   m_Layer: 5
-  m_Name: Character
+  m_Name: CharacterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,7 +1658,7 @@ GameObject:
   - component: {fileID: 1979309617}
   - component: {fileID: 1979309616}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1658,8 +1730,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1721,7 +1793,7 @@ GameObject:
   - component: {fileID: 2000695456}
   - component: {fileID: 2000695455}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1790,9 +1862,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 175490917}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: DisplayNextSentence
+        m_MethodName: ShowNextDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1852,7 +1924,7 @@ GameObject:
   - component: {fileID: 2002505471}
   - component: {fileID: 2002505470}
   m_Layer: 5
-  m_Name: Character
+  m_Name: CharacterImage 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1927,7 +1999,7 @@ GameObject:
   - component: {fileID: 2049949545}
   - component: {fileID: 2049949544}
   m_Layer: 5
-  m_Name: Name (text)
+  m_Name: NameText 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2252,6 +2324,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 672146687}
   - {fileID: 2108014576}
+  - {fileID: 243161297}
   - {fileID: 2049983402}
   - {fileID: 462747491}
   - {fileID: 884961086}
