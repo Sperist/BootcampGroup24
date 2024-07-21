@@ -477,9 +477,9 @@ GameObject:
   - component: {fileID: 239864857}
   - component: {fileID: 239864856}
   m_Layer: 0
-  m_Name: alan
+  m_Name: Diyalog
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -492,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 239864854}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.38, y: 3.814993, z: -1.67}
+  m_LocalPosition: {x: 3.12, y: 3.84, z: -4.71}
   m_LocalScale: {x: 1, y: 1, z: 0.92774}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -586,8 +586,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 4.3753242}
-  m_Center: {x: 0, y: 0, z: -1.7421335}
+  m_Size: {x: 1, y: 1, z: 4.8774505}
+  m_Center: {x: 0, y: 0, z: 0.7184324}
 --- !u!1 &243161295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 569776844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.97, y: 0, z: -8.37}
+  m_LocalPosition: {x: -0.3, y: 0, z: 7.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1293,13 +1293,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672146684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.13423148, y: -0.3049678, z: 0.043463547, w: 0.9418532}
+  m_LocalPosition: {x: 1.45, y: 3.09, z: -12.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.222, y: -35.883, z: 0}
 --- !u!1 &721423841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,9 +1312,9 @@ GameObject:
   - component: {fileID: 721423844}
   - component: {fileID: 721423843}
   m_Layer: 0
-  m_Name: "Ikinci Konu\u015Fma"
+  m_Name: Ikinci Diyalog
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1549,7 +1549,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741769058}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &884961082
+--- !u!1 &769819267
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,27 +1557,68 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 884961086}
-  - component: {fileID: 884961085}
-  - component: {fileID: 884961084}
-  - component: {fileID: 884961083}
-  - component: {fileID: 884961087}
-  - component: {fileID: 884961091}
-  - component: {fileID: 884961089}
+  - component: {fileID: 769819268}
+  - component: {fileID: 769819270}
+  - component: {fileID: 769819269}
   m_Layer: 0
-  m_Name: Queen
-  m_TagString: queen
+  m_Name: Diyalog
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &884961083
+--- !u!4 &769819268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769819267}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1999047990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769819269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769819267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\xC7ok te\u015Fekk\xFCr ederim."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Krali\xE7e ar\u0131 nerede?"
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "Odas\u0131 en \xFCst katta."
+    - character:
+        name: 
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: 
+--- !u!65 &769819270
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884961082}
+  m_GameObject: {fileID: 769819267}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1590,8 +1631,100 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5982655, y: 1.3858271, z: 1.7279115}
-  m_Center: {x: 1.3505671, y: 0.19291353, z: -0.02408719}
+  m_Size: {x: 2.5086818, y: 2.5283406, z: 1}
+  m_Center: {x: 0.754339, y: 0.2891081, z: -3.762503e-16}
+--- !u!1 &819685186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819685187}
+  - component: {fileID: 819685189}
+  - component: {fileID: 819685188}
+  m_Layer: 0
+  m_Name: 'Diyalog '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &819685187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819685186}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1662015770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &819685188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819685186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: YARALI ARI
+        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
+      line: "\xC7ok te\u015Fekk\xFCr ederim."
+--- !u!65 &819685189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819685186}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5086818, y: 2.5283406, z: 1}
+  m_Center: {x: 0.754339, y: 0.2891081, z: -3.762503e-16}
+--- !u!1 &884961082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884961086}
+  - component: {fileID: 884961085}
+  - component: {fileID: 884961084}
+  - component: {fileID: 884961087}
+  - component: {fileID: 884961089}
+  m_Layer: 0
+  m_Name: Queen
+  m_TagString: queen
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &884961084
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1654,7 +1787,8 @@ Transform:
   m_LocalPosition: {x: -0.95, y: 0.257, z: -1.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1643107403}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &884961087
@@ -1707,97 +1841,6 @@ CapsuleCollider:
   m_Height: 1.5009563
   m_Direction: 1
   m_Center: {x: 0.034155607, y: 0.027880669, z: -0.08288556}
---- !u!114 &884961091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884961082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: Sen kimsin? Neden buraya geldin?
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Merhaba krali\xE7em. Ben yard\u0131m i\xE7in gelen bir avokadoyum. "
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Ar\u0131lar\u0131m\u0131n senin hakk\u0131ndaki d\xFC\u015F\xFCncelerini
-        biliyorsun de\u011Fil mi?"
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Evet tam da bu y\xFCzden geldim. Neden b\xF6yle d\xFC\u015F\xFCnd\xFCklerini
-        anlayam\u0131yorum."
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Asl\u0131nda ar\u0131lar durumu tam olarak bilmiyor?"
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Nas\u0131l yani?"
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Birka\xE7 ay \xF6nce bizim bak\u0131m\u0131m\u0131z\u0131 yapan bah\xE7\u0131van
-        tozla\u015Fmay\u0131 artt\u0131r\u0131p daha fazla avokado \xFCretebilmek
-        i\xE7in"
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "\xFCzerimizde ila\xE7lar kulland\u0131. Ne yaz\u0131k ki baz\u0131lar\u0131m\u0131z
-        bu ila\xE7tan k\xF6t\xFC etkilendik."
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Yani di\u011Fer ar\u0131lar s\u0131rf bu y\xFCzden bizleri mi su\xE7luyor?
-        Bu bir sa\xE7mal\u0131k!"
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Maalesef ki \xF6yle. Ama sen her \u015Feyi de\u011Fi\u015Ftirebilirsin."
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: Ne yapabilirim ki?
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Bu zehirli yerden bir an \xF6nce kurtulmam\u0131z laz\u0131m. Bah\xE7enin
-        d\u0131\u015F\u0131nda ormanl\u0131k alanda bo\u015F bir kovan var. "
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Beni oraya ula\u015Ft\u0131rabilirsen bizim kahraman\u0131m\u0131z olmu\u015F
-        olursun."
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Peki tamam seni oraya sa\u011F salim ula\u015Ft\u0131raca\u011F\u0131m."
-    - character:
-        name: KRALICE ARI
-        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
-      line: "Ama bah\xE7\u0131vana dikkat etmemiz laz\u0131m. E\u011Fer yakalan\u0131rsak
-        kimseyi kurtaramay\u0131z."
-    - character:
-        name: 
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: 
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Elimden geleni yapaca\u011F\u0131m."
 --- !u!1 &1185660263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,9 +1928,9 @@ GameObject:
   - component: {fileID: 1203978058}
   - component: {fileID: 1203978057}
   m_Layer: 0
-  m_Name: "Ilk Konu\u015Fma"
+  m_Name: Ilk Diyalog
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1900,7 +1943,7 @@ Transform:
   m_GameObject: {fileID: 1203978055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.626, y: 0, z: -0.886}
+  m_LocalPosition: {x: 0.626, y: 0, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2003,8 +2046,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.049203, y: 1, z: 2.048355}
-  m_Center: {x: 0.52460134, y: 0, z: 0.592366}
+  m_Size: {x: 2.049203, y: 1.0154469, z: 1.9682772}
+  m_Center: {x: 0.52460134, y: 0.0077234507, z: -0.05592954}
 --- !u!1 &1367617190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,7 +2266,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589977502}
   m_CullTransparentMesh: 1
---- !u!1 &1662015764
+--- !u!1 &1643107402
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2231,26 +2274,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1662015770}
-  - component: {fileID: 1662015769}
-  - component: {fileID: 1662015768}
-  - component: {fileID: 1662015767}
-  - component: {fileID: 1662015766}
-  - component: {fileID: 1662015765}
+  - component: {fileID: 1643107403}
+  - component: {fileID: 1643107405}
+  - component: {fileID: 1643107404}
   m_Layer: 0
-  m_Name: "kovandaki iyile\u015Ftirdi\u011Fimiz ar\u0131lar"
+  m_Name: Diyalog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1662015765
+--- !u!4 &1643107403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643107402}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 884961086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1643107404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662015764}
+  m_GameObject: {fileID: 1643107402}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
@@ -2259,16 +2314,89 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - character:
-        name: YARALI ARI
-        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
-      line: "\xC7ok te\u015Fekk\xFCr ederim."
---- !u!65 &1662015766
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: Sen kimsin? Neden buraya geldin?
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Merhaba krali\xE7em. Ben yard\u0131m i\xE7in gelen bir avokadoyum. "
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Ar\u0131lar\u0131m\u0131n senin hakk\u0131ndaki d\xFC\u015F\xFCncelerini
+        biliyorsun de\u011Fil mi?"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Evet tam da bu y\xFCzden geldim. Neden b\xF6yle d\xFC\u015F\xFCnd\xFCklerini
+        anlayam\u0131yorum."
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Asl\u0131nda ar\u0131lar durumu tam olarak bilmiyor?"
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Nas\u0131l yani?"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Birka\xE7 ay \xF6nce bizim bak\u0131m\u0131m\u0131z\u0131 yapan bah\xE7\u0131van
+        tozla\u015Fmay\u0131 artt\u0131r\u0131p daha fazla avokado \xFCretebilmek
+        i\xE7in"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "\xFCzerimizde ila\xE7lar kulland\u0131. Ne yaz\u0131k ki baz\u0131lar\u0131m\u0131z
+        bu ila\xE7tan k\xF6t\xFC etkilendik."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Yani di\u011Fer ar\u0131lar s\u0131rf bu y\xFCzden bizleri mi su\xE7luyor?
+        Bu bir sa\xE7mal\u0131k!"
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Maalesef ki \xF6yle. Ama sen her \u015Feyi de\u011Fi\u015Ftirebilirsin."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: Ne yapabilirim ki?
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Bu zehirli yerden bir an \xF6nce kurtulmam\u0131z laz\u0131m. Bah\xE7enin
+        d\u0131\u015F\u0131nda ormanl\u0131k alanda bo\u015F bir kovan var. "
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Beni oraya ula\u015Ft\u0131rabilirsen bizim kahraman\u0131m\u0131z olmu\u015F
+        olursun."
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Peki tamam seni oraya sa\u011F salim ula\u015Ft\u0131raca\u011F\u0131m."
+    - character:
+        name: KRALICE ARI
+        icon: {fileID: 21300000, guid: 9b57915821dec5346b528ff721af3ec4, type: 3}
+      line: "Ama bah\xE7\u0131vana dikkat etmemiz laz\u0131m. E\u011Fer yakalan\u0131rsak
+        kimseyi kurtaramay\u0131z."
+    - character:
+        name: 
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: 
+    - character:
+        name: AVOKADO
+        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
+      line: "Elimden geleni yapaca\u011F\u0131m."
+--- !u!65 &1643107405
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662015764}
+  m_GameObject: {fileID: 1643107402}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2281,8 +2409,27 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6105113, y: 2.8565276, z: 1.1991392}
-  m_Center: {x: 1.1122196, y: 0.28435874, z: 0.09957079}
+  m_Size: {x: 2.5745893, y: 1, z: 2.315628}
+  m_Center: {x: 0.7872944, y: 0, z: 0.028295934}
+--- !u!1 &1662015764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662015770}
+  - component: {fileID: 1662015769}
+  - component: {fileID: 1662015768}
+  - component: {fileID: 1662015767}
+  m_Layer: 0
+  m_Name: "kovandaki iyile\u015Ftirdi\u011Fimiz ar\u0131lar"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!136 &1662015767
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2368,7 +2515,8 @@ Transform:
   m_LocalPosition: {x: -7.03, y: 0.2, z: -12.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 819685187}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: -55.052, z: -62.43}
 --- !u!1 &1736707451
@@ -2806,8 +2954,6 @@ GameObject:
   - component: {fileID: 1999047989}
   - component: {fileID: 1999047988}
   - component: {fileID: 1999047987}
-  - component: {fileID: 1999047986}
-  - component: {fileID: 1999047985}
   m_Layer: 0
   m_Name: "Krali\xE7e ar\u0131 nerde?"
   m_TagString: Untagged
@@ -2815,57 +2961,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1999047985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999047984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb61523d6da9a34e80c25c971c30587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        name: YARALI ARI
-        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
-      line: "\xC7ok te\u015Fekk\xFCr ederim."
-    - character:
-        name: AVOKADO
-        icon: {fileID: 21300000, guid: 868507e4496f9f7419a697c09dc212aa, type: 3}
-      line: "Krali\xE7e ar\u0131 nerede?"
-    - character:
-        name: YARALI ARI
-        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
-      line: "Odas\u0131 en \xFCst katta."
-    - character:
-        name: 
-        icon: {fileID: 21300000, guid: 81be6ef5c4b929d4faf3fd37a9fc9de0, type: 3}
-      line: 
---- !u!65 &1999047986
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999047984}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6105113, y: 2.8565276, z: 1.1991392}
-  m_Center: {x: 1.1122196, y: 0.28435874, z: 0.09957079}
 --- !u!136 &1999047987
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2951,7 +3046,8 @@ Transform:
   m_LocalPosition: {x: -6.59, y: 0.2, z: -8.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 769819268}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: -55.052, z: -62.43}
 --- !u!1 &2000695453

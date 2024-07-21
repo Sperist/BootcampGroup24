@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.05f; // Metin yazma hýzý
     public Animator animator; // Diyalog kutularýnýn animasyonunu kontrol etmek için
 
+    private DialogueTrigger currentTrigger; // Mevcut diyalog tetikleyicisini sakla
+
     void Awake()
     {
         if (Instance == null)
@@ -31,7 +33,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, DialogueTrigger trigger)
     {
         if (isDialogueActive)
         {
@@ -39,6 +41,7 @@ public class DialogueManager : MonoBehaviour
             return; // Eðer diyalog aktifse tekrar baþlatma
         }
 
+        currentTrigger = trigger; // Mevcut diyalog tetikleyicisini sakla
         isDialogueActive = true;
         animator.SetBool("isOpen", true); // Diyalog açýldýðýnda animasyonu baþlat
 
@@ -62,7 +65,6 @@ public class DialogueManager : MonoBehaviour
 
         if (isTyping) return; // Eðer yazým devam ediyorsa, geçiþ yapma
 
-
         DialogueLine currentLine = lines.Dequeue(); // Kuyruktan bir diyalog satýrý al
 
         characterIcon.sprite = currentLine.character.icon; // Karakter resmini güncelle
@@ -83,12 +85,13 @@ public class DialogueManager : MonoBehaviour
             dialogueArea.text += letter; // Her harfi ekle
             yield return new WaitForSeconds(typingSpeed); // Yazma hýzýný ayarla
         }
-        isTyping = false;
+
+        isTyping = false; // Yazma iþlemi bitti
     }
 
     void OnNextButtonClicked()
     {
-        if (isDialogueActive)
+        if (isDialogueActive && !isTyping)
         {
             DisplayNextDialogueLine(); // Butona týklanýrsa bir sonraki diyaloðu göster
         }
@@ -98,142 +101,12 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         animator.SetBool("isOpen", false); // Diyalog bittiðinde animasyonu kapat
-    }
-}
 
-
-
-
-//dialogueBox a at
-
-/*
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-
-[System.Serializable]
-public class Dialogue
-{
-    public string characterName;
-    public Sprite characterImage;
-    public string dialogueText;
-}
-
-public class DialogueManager : MonoBehaviour
-{
-    public GameObject dialogueBox1;
-    public GameObject dialogueBox2;
-
-    public TextMeshProUGUI nameText1;
-    public Image characterImage1;
-    public TextMeshProUGUI dialogueText1;
-
-    public TextMeshProUGUI nameText2;
-    public Image characterImage2;
-    public TextMeshProUGUI dialogueText2;
-
-    public Button nextButton1;
-    public Button nextButton2;
-
-    private Dialogue[] dialogues;
-    private int currentDialogueIndex = 0;
-    public Animator animator1;
-    public Animator animator2;
-
-    private void Start()
-    {
-        if (nextButton1 != null)
+        // Mevcut diyalog tetikleyicisini yok et
+        if (currentTrigger != null)
         {
-            nextButton1.onClick.AddListener(ShowNextDialogue);
-        }
-        if (nextButton2 != null)
-        {
-            nextButton2.onClick.AddListener(ShowNextDialogue);
-        }
-
-        // Baþlangýçta tüm diyalog kutularýnýn görünürlüðünü kontrol et
-        dialogueBox1.SetActive(false);
-        dialogueBox2.SetActive(false);
-    }
-
-    public void StartDialogue(Dialogue[] npcDialogues)
-    {
-        dialogues = npcDialogues;
-        currentDialogueIndex = 0;
-
-        // Diyalog kutularýný baþlat
-        dialogueBox1.SetActive(true);
-        dialogueBox2.SetActive(false);
-
-        // Animasyonlarý baþlat
-        if (animator1 != null)
-        {
-            animator1.SetBool("isOpen", true);
-        }
-        if (animator2 != null)
-        {
-            animator2.SetBool("isOpen", true);
-        }
-
-        ShowNextDialogue(); // Ýlk diyaloðu göster
-    }
-
-    public void ShowNextDialogue()
-    {
-        if (currentDialogueIndex < dialogues.Length)
-        {
-            Dialogue currentDialogue = dialogues[currentDialogueIndex];
-            if (currentDialogueIndex % 2 == 0)
-            {
-                nameText1.text = currentDialogue.characterName;
-                characterImage1.sprite = currentDialogue.characterImage;
-                dialogueText1.text = currentDialogue.dialogueText;
-
-                // Ýkinci kutuyu kapat ve birincisini aç
-                dialogueBox2.SetActive(false);
-                dialogueBox1.SetActive(true);
-
-                // Butonu aktif hale getir
-                nextButton1.gameObject.SetActive(true);
-                nextButton2.gameObject.SetActive(false);
-            }
-            else
-            {
-                nameText2.text = currentDialogue.characterName;
-                characterImage2.sprite = currentDialogue.characterImage;
-                dialogueText2.text = currentDialogue.dialogueText;
-
-                // Birinci kutuyu kapat ve ikincisini aç
-                dialogueBox1.SetActive(false);
-                dialogueBox2.SetActive(true);
-
-                // Butonu aktif hale getir
-                nextButton1.gameObject.SetActive(false);
-                nextButton2.gameObject.SetActive(true);
-            }
-            currentDialogueIndex++;
-        }
-        else
-        {
-            EndDialogue();
-        }
-    }
-
-    private void EndDialogue()
-    {
-        // Diyalog kutularýný kapat
-        dialogueBox1.SetActive(false);
-        dialogueBox2.SetActive(false);
-
-        // Animasyonlarý durdur
-        if (animator1 != null)
-        {
-            animator1.SetBool("isOpen", false);
-        }
-        if (animator2 != null)
-        {
-            animator2.SetBool("isOpen", false);
+            Destroy(currentTrigger.gameObject);
         }
     }
 }
-*/
+
