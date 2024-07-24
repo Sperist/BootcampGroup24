@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - honey
   - beeGuard
+  - gate
   layers:
   - Default
   - TransparentFX
