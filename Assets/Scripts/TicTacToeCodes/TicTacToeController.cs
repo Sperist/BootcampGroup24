@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Puzzle2GameController : MonoBehaviour
+public class TicTacToeController : MonoBehaviour
 {
 
     public int whoseTurn;       //0=x and 1=o

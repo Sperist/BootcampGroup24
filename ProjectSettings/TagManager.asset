@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - "kovani\xE7i"
-  - Honey
-  - box
+  - horizontalwood
+  - verticalwood
+  - Exit
+  - honey
+  - beeGuard
+  - gate
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - groundMask
   - 
   - 
   - 
