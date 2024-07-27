@@ -4,10 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+
   - "kovani\xE7i"
   - Honey
   - box
   - queen
+
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
+  - groundMask
   - 
   - 
   - 
