@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - horizontalwood
-  - verticalwood
-  - Exit
-  - honey
-  - beeGuard
-  - gate
+
+  - "kovani\xE7i"
+  - Honey
+  - box
+  - queen
+
   layers:
   - Default
   - TransparentFX
