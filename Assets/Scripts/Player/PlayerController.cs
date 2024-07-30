@@ -42,12 +42,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        print(isJumping);
-
         Move();
         CheckGroundStatus();
-
-
     }
 
     private void Move()
@@ -116,14 +112,6 @@ public class PlayerController : MonoBehaviour
         Vector3 origin = transform.position + Vector3.down * (characterController.height / 2);
         isGrounded = Physics.Raycast(origin, Vector3.down, out RaycastHit hitInfo, (characterController.height) + 0.1f, groundMask);
 
-        Debug.DrawRay(origin, Vector3.down * ((characterController.height) + 0.1f), Color.red);
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("box"))
-        {
-            print("taksi");
-        }
+        Debug.DrawRay(origin, Vector3.down * ((characterController.height)/2 + 0.1f), Color.red);
     }
 }
