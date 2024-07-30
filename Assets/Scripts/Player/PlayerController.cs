@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         CheckGroundStatus();
+
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            StartCoroutine(JumpCoroutine());
+        }
     }
 
     private void Move()
@@ -57,12 +62,7 @@ public class PlayerController : MonoBehaviour
 
         if (move != Vector3.zero)
         {
-            if (Input.GetKey(KeyCode.Space) && isGrounded)
-            {
-                StartCoroutine(JumpCoroutine());
-            }
-
-            else if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 moveSpeed = runningSpeed;
 
