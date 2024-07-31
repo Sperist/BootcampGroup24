@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool isWalking;
     public bool isRunning;
     public bool isJumping;
+    public bool isClimbing;
 
     [SerializeField] private float walkingSpeed = 5f;
     [SerializeField] private float runningSpeed = 10f;
@@ -42,7 +43,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if (!isClimbing)
+        {
+            Move();
+        }
+
         CheckGroundStatus();
 
         if (Input.GetKey(KeyCode.Space) && isGrounded)

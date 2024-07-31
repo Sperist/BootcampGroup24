@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bfb565e11f95ac41967ea32a9d056a3
+guid: a0359dbfc99cd044ab22ad6c69dbdd3f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,7 +31,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Climbing
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 15
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -77,17 +106,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - a0359dbfc99cd044ab22ad6c69dbdd3f
-  - e2c0ff007bf975e4b925cc044ac0f439
-  - 34146d2ec6304e94a96256ae8d249867
-  - 0512e50c0914f95489c16bc1773402a7
-  - 1141e313d0deff343a6a504ba24f4098
-  - 11592d26cb34f25488e393a848e84cda
-  - 499cea61821af1a4182cae009817f022
-  - c1f4efdb64647e04fa5bebbafb092249
-  - 5015c4e2d4bc6a54a96c2552ccc68e27
-  - 2d0d492ff48e02946b0b2806eecb34af
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

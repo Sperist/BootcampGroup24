@@ -38,7 +38,8 @@ public class CameraController : MonoBehaviour
     }
 
     private void FollowTarget()
-    {if (!isWall)
+    {
+        if (true)
         {
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");

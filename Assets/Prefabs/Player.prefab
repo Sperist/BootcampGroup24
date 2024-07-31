@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1211467847569080977}
   - component: {fileID: 1464130664727653813}
   - component: {fileID: 6919025012460714764}
+  - component: {fileID: 5500293861760299570}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,6 +79,7 @@ MonoBehaviour:
   isWalking: 0
   isRunning: 0
   isJumping: 0
+  isClimbing: 0
   walkingSpeed: 5
   runningSpeed: 13
   jumpHeight: 1.75
@@ -123,6 +125,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1543134879969947665}
+  startClimbPoint: {fileID: 0}
+  endClimbPoint: {fileID: 0}
+--- !u!114 &5500293861760299570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851742595945931835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb7081e061c64541831a6081401bb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6857027053652989230
 PrefabInstance:
   m_ObjectHideFlags: 0
