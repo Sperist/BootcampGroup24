@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    [SerializeField] private CapsuleCollider capsuleCollider;
-
     private bool isGrounded = true;
     [SerializeField] private LayerMask groundMask;
 
@@ -16,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool isRunning;
     public bool isJumping;
     public bool isClimbing;
+    public bool isThrowing;
 
     [SerializeField] private float walkingSpeed = 5f;
     [SerializeField] private float runningSpeed = 10f;

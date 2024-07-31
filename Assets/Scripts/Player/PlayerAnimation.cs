@@ -4,36 +4,50 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    [SerializeField] private Camera climbCamera;
+    [SerializeField] private Camera playerCamera;
+
     [SerializeField] private Animator animator;
 
     [SerializeField] private Transform startClimbPoint;
     [SerializeField] private Transform endClimbPoint;
+
+    private bool isClimbingCoroutineRunning = false;
+
     void Update()
     {
-        StartCoroutine(ClimbAnimEndCheckCoroutine());
+        if (PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
+        {
+            StartCoroutine(ClimbAnimEndCheckCoroutine());
+        }
 
         animator.SetBool("isWalk", PlayerController.instance.isWalking);
         animator.SetBool("isRun", PlayerController.instance.isRunning);
         animator.SetBool("isJump", PlayerController.instance.isJumping);
         animator.SetBool("isClimb", PlayerController.instance.isClimbing);
+        animator.SetBool("isThrow", PlayerController.instance.isThrowing);
     }
 
     private IEnumerator ClimbAnimEndCheckCoroutine()
     {
-        if (PlayerController.instance.isClimbing)
-        {
-            PlayerTakeStartClimbPoint();
+        climbCamera.gameObject.SetActive(true);
+        playerCamera.gameObject.SetActive(false);
 
-            yield return new WaitForSeconds(5f);
+        PlayerTakeStartClimbPoint();
 
-            PlayerController.instance.isClimbing = false;
-            
-            print("anim bitti");
+        yield return new WaitForSeconds(5f);
 
-            yield return new WaitForSeconds(0.041f);
+        PlayerController.instance.isClimbing = false;
 
-            PlayerTakeEndClimbPoint();
-        }
+        yield return new WaitForSeconds(0.041f);
+
+        PlayerTakeEndClimbPoint();
+
+        yield return new WaitForSeconds(0.2f);
+
+        ThrowSeed.instance.canThrow = true;
+        print("Press T");
+        isClimbingCoroutineRunning = true;
     }
 
     private void PlayerTakeStartClimbPoint()
