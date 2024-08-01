@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map Design.unity
     guid: 3ca23602e98e69c4fa948d405d364a63
+  - enabled: 1
+    path: Assets/Scenes/puzzle2.unity
+    guid: f4e2ad52635404d4ab00a3339258047b
   m_configObjects: {}
