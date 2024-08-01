@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
+    public bool canMove = true;
+
     private bool isGrounded = true;
     [SerializeField] private LayerMask groundMask;
 
@@ -42,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (!isClimbing)
+        if (!isClimbing && canMove)
         {
             Move();
         }
@@ -66,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
         if (move != Vector3.zero)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (!PlayerCarrying.instance.isCarrying && Input.GetKey(KeyCode.LeftShift))
             {
                 moveSpeed = runningSpeed;
 
@@ -100,7 +102,7 @@ public class PlayerController : MonoBehaviour
         characterController.Move((move + velocity) * Time.deltaTime);
     }
 
-    private IEnumerator JumpCoroutine()
+    public IEnumerator JumpCoroutine()
     {
         isJumping = true;
         yield return new WaitForSeconds(0.2f);
