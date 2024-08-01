@@ -1224,7 +1224,7 @@ RectTransform:
   m_GameObject: {fileID: 369043484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.96234965, y: 1.0828124, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 218580736}
@@ -1254,8 +1254,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6d27dbdffa9f9704fbdce8734c5ddb64, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1511,7 +1511,7 @@ RectTransform:
   m_GameObject: {fileID: 411793258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.201837, y: 1.2746135, z: 1.1587396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 167149060}
@@ -1527,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 2, y: 1}
   m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411793260
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd0ace408f3dc0d4e95d571e0ca08329, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d46be3b01030a8449bc74fc42ecbeb19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1839,8 +1839,8 @@ MonoBehaviour:
   - {fileID: 2026772366}
   - {fileID: 1660516185}
   playerIcons:
-  - {fileID: 21300000, guid: aea0940c2dcb5d54c9079c0dee60cac7, type: 3}
-  - {fileID: 21300000, guid: 478eff92a06295c4885e8e6073989822, type: 3}
+  - {fileID: 21300000, guid: c73a11e66eef422449a5c07871dd94a5, type: 3}
+  - {fileID: 21300000, guid: e8992bf3e47fc9f4d9cc87f0a84e99d6, type: 3}
   tictactoeSpaces:
   - {fileID: 167149061}
   - {fileID: 1621559817}
@@ -3755,7 +3755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.9803922, g: 0.7254902, b: 0.38823533, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
