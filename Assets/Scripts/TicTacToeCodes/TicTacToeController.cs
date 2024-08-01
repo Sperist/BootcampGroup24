@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class TicTacToeController : MonoBehaviour
 {
-
     public int whoseTurn;       //0=x and 1=o
     public int turnCount;       //counts the number of turn played
     public GameObject[] turnIcons;      //displays whos turn it is
@@ -21,6 +20,7 @@ public class TicTacToeController : MonoBehaviour
     public Text xPlayersScoreText;
     public Text oPlayersScoreText;
     public GameObject catImage;
+    public GameObject missionCompletePanel; // New mission complete panel
 
     void Start()
     {
@@ -33,12 +33,12 @@ public class TicTacToeController : MonoBehaviour
         turnCount = 0;
         turnIcons[0].SetActive(true);
         turnIcons[1].SetActive(false);
-        for(int i =0; i <tictactoeSpaces.Length; i++)
+        for (int i = 0; i < tictactoeSpaces.Length; i++)
         {
-            tictactoeSpaces[i].interactable= true;
+            tictactoeSpaces[i].interactable = true;
             tictactoeSpaces[i].GetComponent<Image>().sprite = null;
         }
-        for(int i =0;i<markedSpaces.Length; i++)
+        for (int i = 0; i < markedSpaces.Length; i++)
         {
             markedSpaces[i] = -100;
         }
@@ -46,7 +46,7 @@ public class TicTacToeController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void TicTacToeButton(int WhichNumber)
@@ -144,31 +144,38 @@ public class TicTacToeController : MonoBehaviour
     void WinnerDisplay(int indexIn)
     {
         winnerPanel.gameObject.SetActive(true);
-        if(whoseTurn == 0)
+        if (whoseTurn == 0)
         {
             xPlayersScore++;
-            xPlayersScoreText.text=xPlayersScore.ToString();
-            winnerText.text = "Player X Wins!";
+            xPlayersScoreText.text = xPlayersScore.ToString();
+            winnerText.text = "Kazandýn!!";
+
+            // Check if x player's score is 3
+            if (xPlayersScore == 3)
+            {
+                missionCompletePanel.SetActive(true);
+            }
         }
         else if (whoseTurn == 1)
         {
             oPlayersScore++;
             oPlayersScoreText.text = oPlayersScore.ToString();
-            winnerText.text = "Player O Wins!";
+            winnerText.text = "Yapay Zeka Kazandý!!";
         }
         winningLine[indexIn].SetActive(true);
     }
+
     public void Rematch()
     {
         GameSetup();
-        for(int i = 0; i<winningLine.Length; i++)
+        for (int i = 0; i < winningLine.Length; i++)
         {
             winningLine[i].SetActive(false);
         }
         winnerPanel.SetActive(false);
         catImage.SetActive(false);
     }
-    
+
     public void Restart()
     {
         Rematch();
@@ -176,12 +183,13 @@ public class TicTacToeController : MonoBehaviour
         oPlayersScore = 0;
         xPlayersScoreText.text = "0";
         oPlayersScoreText.text = "0";
+        missionCompletePanel.SetActive(false); // Reset mission complete panel
     }
 
     void Cat()
     {
         winnerPanel.SetActive(true);
         catImage.SetActive(true);
-        winnerText.text = "CAT";
+        winnerText.text = "Berabere!!";
     }
 }
