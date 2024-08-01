@@ -7,14 +7,13 @@ public class seedMovement : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 6;
-    private float originalSpeed;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
     public Transform cam;
 
-    // Jump Stuff
+    //Jump Stuff
     Vector3 velocity;
     public float gravity = -9.8f;
     public Transform groundCheck;
@@ -23,14 +22,13 @@ public class seedMovement : MonoBehaviour
     bool isGrounded;
     public float jumpHeight = 3;
 
-    // Dash & Movement
+    //Dash & Movement
     public Vector3 moveDir;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        originalSpeed = speed; // Store the original speed value
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -53,11 +51,11 @@ public class seedMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
-        // Jump
+        //Jump
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDist, groundMask);
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f; // Small negative value for faster ground hit
+            velocity.y = -2f; // Daha hýzlý yere inmek için küçük bir negatif deðer
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -67,21 +65,5 @@ public class seedMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("honey"))
-        {
-            speed /= 2; // Halve the speed
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("honey"))
-        {
-            speed = originalSpeed; // Restore the original speed
-        }
     }
 }

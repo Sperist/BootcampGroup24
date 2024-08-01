@@ -70,7 +70,7 @@ public class CameraController : MonoBehaviour
             transform.position = desiredPosition;
             transform.LookAt(target);
         }
-        }
+    }
 
     private void WallControl()
     {
@@ -81,9 +81,9 @@ public class CameraController : MonoBehaviour
         {
             isWall = true;
         }
-        else if(!Physics.Raycast(target.position, -transform.forward, out hitInfo, firstDistance, wallMask))
+        else if (!Physics.Raycast(target.position, -transform.forward, out hitInfo, firstDistance, wallMask))
         {
-            isWall= false;
+            isWall = false;
         }
     }
 }
