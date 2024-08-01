@@ -573,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 569776844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 0, z: -11.73}
+  m_LocalPosition: {x: 0.41, y: 0, z: -0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -795,7 +795,7 @@ MonoBehaviour:
     - character:
         name: YARALI ARI
         icon: {fileID: 21300000, guid: 50aa008376705894792fc08556ebef48, type: 3}
-      line: "\u0130htiyar k\xF6stebe\u011Fin yuvas\u0131nda. "
+      line: "Ihtiyar k\xF6stebe\u011Fin yuvas\u0131nda. "
     - character:
         name: AVOKADO
         icon: {fileID: 21300000, guid: 7ad52ba477436114ba45a231d8eb6c37, type: 3}
@@ -813,7 +813,7 @@ MonoBehaviour:
     - character:
         name: YARALI ARI
         icon: {fileID: 21300000, guid: 50aa008376705894792fc08556ebef48, type: 3}
-      line: "Korkma o koca k\xF6stebek \xE7ok ya\u015Fl\u0131. Bu y\xFCzden olduk\xE7a
+      line: "Korkma, o koca k\xF6stebek \xE7ok ya\u015Fl\u0131. Bu y\xFCzden olduk\xE7a
         yava\u015F. L\xFCtfen tek umudumuz sensin bize yard\u0131m et."
     - character:
         name: AVOKADO
@@ -1282,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -127}
+  m_AnchoredPosition: {x: 13, y: 8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1130175253
