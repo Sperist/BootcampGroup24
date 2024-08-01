@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ClimbDetector
   - SecondCamera
+  - PlankBridge
+  - PlankThrow
+  - BridgeFixer
   layers:
   - Default
   - TransparentFX

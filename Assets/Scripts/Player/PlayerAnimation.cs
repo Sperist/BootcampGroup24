@@ -16,16 +16,41 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
+        print(animator.speed);
+
         if (PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
         {
             StartCoroutine(ClimbAnimEndCheckCoroutine());
         }
 
-        animator.SetBool("isWalk", PlayerController.instance.isWalking);
-        animator.SetBool("isRun", PlayerController.instance.isRunning);
-        animator.SetBool("isJump", PlayerController.instance.isJumping);
-        animator.SetBool("isClimb", PlayerController.instance.isClimbing);
-        animator.SetBool("isThrow", PlayerController.instance.isThrowing);
+        if(!PlayerCarrying.instance.isCarrying)
+        {
+            animator.SetBool("isWalk", PlayerController.instance.isWalking);
+            animator.SetBool("isRun", PlayerController.instance.isRunning);
+            animator.SetBool("isJump", PlayerController.instance.isJumping);
+            animator.SetBool("isClimb", PlayerController.instance.isClimbing);
+            animator.SetBool("isThrow", PlayerController.instance.isThrowing);
+        }
+
+        else
+        {
+            animator.SetBool("isWalk", false);
+            animator.SetBool("isRun", false);
+            animator.SetBool("isJump", false);
+            animator.SetBool("isClimb", false);
+            animator.SetBool("isThrow", false);
+
+        }
+
+            if (PlayerCarrying.instance.isCarrying &&!PlayerController.instance.isWalking)
+                animator.speed = 0;
+
+            else
+                animator.speed = 1;
+        
+        animator.SetBool("isCarry", PlayerCarrying.instance.isCarrying);
+        animator.SetBool("isFall", PlayerFalling.instance.isHanging);
+        animator.SetBool("isGetUp", PlayerFalling.instance.isGettingUP);
     }
 
     private IEnumerator ClimbAnimEndCheckCoroutine()
