@@ -69,6 +69,7 @@ public class PlayerAnimation : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         ThrowSeed.instance.canThrow = true;
+        ThrowSeed.instance.StartThrowCoroutine();
 
         print("Press T");
 

@@ -37,6 +37,12 @@ public class MoleManager : MonoBehaviour
             agent.SetDestination(firstPosition);
         }
 
+        if (distanceToTarget <= 3)
+        {
+            print("küçük");
+            SceneManagment.instance.ReloadScene();
+        }
+
 
         if (agent.velocity.magnitude > 0.1f)
         {
@@ -52,6 +58,16 @@ public class MoleManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            print("teams");
+            SceneManagment.instance.ReloadScene();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            print("temasssssssssss");
             SceneManagment.instance.ReloadScene();
         }
     }

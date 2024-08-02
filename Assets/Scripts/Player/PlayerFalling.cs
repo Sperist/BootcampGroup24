@@ -48,7 +48,7 @@ public class PlayerFalling : MonoBehaviour
     {
         PlayerController.instance.canMove = false;
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
 
         PlayerController.instance.gravity = firstGravity;
 
