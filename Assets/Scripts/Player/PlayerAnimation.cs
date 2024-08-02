@@ -16,7 +16,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        if (SceneManagment.instance.isSceneMapDesign() && PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
+        if (SceneManagment.instance.isSceneMapDesign1() && PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
         {
             StartCoroutine(ClimbAnimEndCheckCoroutine());
         }
@@ -40,7 +40,7 @@ public class PlayerAnimation : MonoBehaviour
 
         }
 
-            if (PlayerCarrying.instance.isCarrying &&!PlayerController.instance.isWalking)
+            if (PlayerCarrying.instance.isCarrying && !PlayerController.instance.isWalking)
                 animator.speed = 0;
 
             else
@@ -69,7 +69,16 @@ public class PlayerAnimation : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         ThrowSeed.instance.canThrow = true;
+
         print("Press T");
+
+        //CheckPointSystem.instance.SetNextMissionTrue();
+
+        if (ThrowSeed.instance.wasThrowedSeed)
+        {
+            SceneManagment.instance.LoadBeehiveScene();
+        }
+
         isClimbingCoroutineRunning = true;
     }
 

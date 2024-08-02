@@ -24,7 +24,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void PlayButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void StopButton()

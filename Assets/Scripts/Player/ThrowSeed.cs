@@ -7,6 +7,7 @@ public class ThrowSeed : MonoBehaviour
     public static ThrowSeed instance;
 
     public bool canThrow;
+    public bool wasThrowedSeed;
 
     [SerializeField] private GameObject childSeed;
 
@@ -61,6 +62,7 @@ public class ThrowSeed : MonoBehaviour
             yield return null;
         }
 
+        wasThrowedSeed = true;
         seed1.transform.position = targetPos; // Hedef pozisyona tam olarak ulaþmak için
 
     }

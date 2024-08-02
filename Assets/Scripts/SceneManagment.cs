@@ -12,11 +12,14 @@ public class SceneManagment : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+    }
     public bool isSceneMapDesign()
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name == "Map Design")
+        if (currentScene.name == "MainScene")
         {
             return true;
         }
@@ -24,5 +27,45 @@ public class SceneManagment : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public bool isSceneMapDesign1()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name == "MainScene 1")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+    }
+
+    public void LoadMoleScene()
+    {
+        SceneManager.LoadScene("MoleHole");
+    }
+
+    public void LoadBeehiveScene()
+    {
+        SceneManager.LoadScene("Beehive");
+    }
+
+    public void LoadMainScene()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void LoadMainScene1()
+    {
+        SceneManager.LoadScene("MainScene 1");
     }
 }

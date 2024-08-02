@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 [System.Serializable]
 public class DialogueCharacter
@@ -36,7 +38,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            print("temmmas");
             TriggerDialogue();
         }
     }

@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Syringe"))
@@ -15,6 +17,8 @@ public class PlayerCollision : MonoBehaviour
         {
             if(SyringeManager.instance.syringeNumber == 3)
             {
+                //CheckPointSystem.instance.SetNextMissionTrue();
+                SceneManagment.instance.LoadMainScene1();
                 //level bitti yeni level
             }
 
@@ -26,35 +30,41 @@ public class PlayerCollision : MonoBehaviour
 
         if (other.CompareTag("LotusWater"))
         {
-            // checkpoint system son check point
-            print("lotus failed");
+            SceneManagment.instance.ReloadScene();
         }
 
+        if (other.CompareTag("BridgeMissionDetector"))
+        {
+            other.gameObject.SetActive(false);
+            //CheckPointSystem.instance.SetNextMissionTrue();
+        }
+
+        if (other.CompareTag("SyringeBag"))
+        {
+            //CheckPointSystem.instance.SetNextMissionTrue();
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("ClimbDetector"))
-        {
-            print("press F");  
-            
+        {   
+
             if(Input.GetKeyDown(KeyCode.F))
             {
                 PlayerController.instance.isWalking = false;
                 PlayerController.instance.isRunning = false;
                 PlayerController.instance.isClimbing = true;
 
-                //Press F yazýsý falan yazýlabilir
             }
         }
 
         if (other.CompareTag("MoleSceneDetector"))
         {
-            print("press F");
 
             if (Input.GetKeyDown(KeyCode.F)) //köstebek sahnesine geçmek için tüm gereklililkler karþýlaanýyorsa 
             {
-                //köstebek sahnesi yükle
+                SceneManagment.instance.LoadMoleScene();
             }
         }
     }

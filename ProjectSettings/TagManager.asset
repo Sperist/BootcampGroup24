@@ -18,6 +18,10 @@ TagManager:
   - horizontalwood
   - Exit
   - MoleSceneDetector
+  - BridgeMissionDetector
+  - SyringeBag
+  - cincam
+  - GameEnd
   layers:
   - Default
   - TransparentFX

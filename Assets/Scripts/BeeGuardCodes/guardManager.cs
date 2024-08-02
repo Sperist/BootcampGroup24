@@ -17,10 +17,9 @@ public class guardManager : MonoBehaviour
         if (other.CompareTag("beeGuard"))
         {
             Debug.Log("Beeguard ile temas edildi!");
-            gameOverPanel.SetActive(true);
-            Time.timeScale = 0; // Oyunun zamanýný durdur
-            Cursor.visible = true; // Fare imlecini görünür yap
-            Cursor.lockState = CursorLockMode.None; // Fare imlecinin kilidini aç
+            SceneManagment.instance.ReloadScene();
+            //Cursor.visible = true; // Fare imlecini görünür yap
+            //Cursor.lockState = CursorLockMode.None; // Fare imlecinin kilidini aç
         }
     }
 

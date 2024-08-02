@@ -36,8 +36,12 @@ public class seedMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isRotated = false;
+
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+
+        transform.Rotate(h * 50, 0, -v * 50);
 
         Vector3 dir = new Vector3(h, 0, v).normalized;
 
@@ -45,7 +49,8 @@ public class seedMovement : MonoBehaviour
         {
             float targetAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            //transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
@@ -65,5 +70,12 @@ public class seedMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("GameEnd")) {
+            GameEnd.instance.isLevelEnd = true;
+        }
     }
 }

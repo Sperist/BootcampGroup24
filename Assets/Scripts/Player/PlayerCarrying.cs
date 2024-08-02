@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCarrying : MonoBehaviour
 {
@@ -25,20 +26,29 @@ public class PlayerCarrying : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (!isCarrying && Input.GetKey(KeyCode.F) && other.gameObject.CompareTag("PlankBridge"))
+        if (!isCarrying && other.gameObject.CompareTag("PlankBridge"))
         {
-            planks = other.gameObject;
 
-            planks.transform.position = carryingPointTransform.position;
-            planks.transform.rotation = carryingPointTransform.rotation ;
-            planks.transform.SetParent(transform);
+            if(Input.GetKey(KeyCode.F))
+            {
+                planks = other.gameObject;
 
-            isCarrying = true;
+                planks.transform.position = carryingPointTransform.position;
+                planks.transform.rotation = carryingPointTransform.rotation ;
+                planks.transform.SetParent(transform);
+
+                isCarrying = true;
+
+            }
         }
 
-        if (!isCoroutineStarted && isCarrying && Input.GetKey(KeyCode.F) && other.gameObject.CompareTag("BridgeFixer"))
+        if (!isCoroutineStarted && isCarrying && other.gameObject.CompareTag("BridgeFixer"))
         {
-            StartCoroutine(FixingBrdige());
+
+            if(Input.GetKey(KeyCode.F))
+            {
+                StartCoroutine(FixingBrdige());
+            }
         }
     }
 

@@ -12,24 +12,39 @@ public class MoleManager : MonoBehaviour
     private Vector3 firstPosition;
 
     private NavMeshAgent agent;
+
+    private bool isMoleMoving;
+
+    [SerializeField] private Animator animator;
+
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();   
+        agent = GetComponent<NavMeshAgent>();
         firstPosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        MoleAnim();
+
         float distanceToTarget = Vector3.Distance(transform.position, playerTransform.position);
         if (distanceToTarget <= startingDistance)
         {
             agent.SetDestination(playerTransform.position);
         }
-
         else
         {
             agent.SetDestination(firstPosition);
+        }
+
+
+        if (agent.velocity.magnitude > 0.1f)
+        {
+            isMoleMoving = true;
+        }
+        else
+        {
+            isMoleMoving = false;
         }
     }
 
@@ -37,8 +52,12 @@ public class MoleManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Level yeniden baþla
-            //þýrýnga number sýfýrla
+            SceneManagment.instance.ReloadScene();
         }
+    }
+
+    private void MoleAnim()
+    {
+        animator.SetBool("isMoleMove", isMoleMoving);
     }
 }

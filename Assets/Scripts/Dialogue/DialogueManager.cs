@@ -117,6 +117,13 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(currentTrigger.gameObject);
         }
+
+        if (GameEnd.instance.isLevelEnd)
+        {
+            GameEnd.instance.StartGameEndCor();
+        }
+
+        //CheckPointSystem.instance.SetNextMissionTrue();
     }
 }
 
