@@ -24,6 +24,12 @@ public class PlayerCollision : MonoBehaviour
             }
         }
 
+        if (other.CompareTag("LotusWater"))
+        {
+            // checkpoint system son check point
+            print("lotus failed");
+        }
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -39,6 +45,16 @@ public class PlayerCollision : MonoBehaviour
                 PlayerController.instance.isClimbing = true;
 
                 //Press F yazýsý falan yazýlabilir
+            }
+        }
+
+        if (other.CompareTag("MoleSceneDetector"))
+        {
+            print("press F");
+
+            if (Input.GetKeyDown(KeyCode.F)) //köstebek sahnesine geçmek için tüm gereklililkler karþýlaanýyorsa 
+            {
+                //köstebek sahnesi yükle
             }
         }
     }

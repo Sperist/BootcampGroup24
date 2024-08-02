@@ -11,6 +11,13 @@ TagManager:
   - BridgeFixer
   - Syringe
   - MoleLevelEndCoroutine
+  - beeGuard
+  - LotusWater
+  - queen
+  - verticalwood
+  - horizontalwood
+  - Exit
+  - MoleSceneDetector
   layers:
   - Default
   - TransparentFX

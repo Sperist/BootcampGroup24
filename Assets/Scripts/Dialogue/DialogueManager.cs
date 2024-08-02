@@ -29,12 +29,22 @@ public class DialogueManager : MonoBehaviour
         lines = new Queue<DialogueLine>(); // Kuyruðu baþlat
         if (nextButton != null)
         {
-            nextButton.onClick.AddListener(OnNextButtonClicked); // Butona týklama olayýný ekle
+            //nextButton.onClick.AddListener(OnNextButtonClicked); // Butona týklama olayýný ekle
+        }
+    }
+
+    private void Update()
+    {
+        if (isDialogueActive && Input.GetKey(KeyCode.F))
+        {
+            OnNextButtonClicked();
         }
     }
 
     public void StartDialogue(Dialogue dialogue, DialogueTrigger trigger)
     {
+        print("diyalog bþladý");
+
         if (isDialogueActive)
         {
             Debug.Log("Dialogue is already active.");

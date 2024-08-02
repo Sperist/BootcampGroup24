@@ -13,7 +13,6 @@ public class SyringeManager : MonoBehaviour
         instance = this;
     }
     
-
     public void TakeSyringe(GameObject other)
     {
         other.gameObject.SetActive(false);

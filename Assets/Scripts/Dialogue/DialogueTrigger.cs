@@ -36,6 +36,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            print("temmmas");
             TriggerDialogue();
         }
     }
