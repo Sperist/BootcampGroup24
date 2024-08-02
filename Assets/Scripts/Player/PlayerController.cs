@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
     {
         instance = this;
         characterController = GetComponent<CharacterController>();
+
+        canMove = true;
     }
 
     private void Start()

@@ -16,9 +16,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        print(animator.speed);
-
-        if (PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
+        if (SceneManagment.instance.isSceneMapDesign() && PlayerController.instance.isClimbing && !isClimbingCoroutineRunning)
         {
             StartCoroutine(ClimbAnimEndCheckCoroutine());
         }

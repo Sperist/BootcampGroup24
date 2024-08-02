@@ -9,6 +9,8 @@ TagManager:
   - PlankBridge
   - PlankThrow
   - BridgeFixer
+  - Syringe
+  - MoleLevelEndCoroutine
   layers:
   - Default
   - TransparentFX

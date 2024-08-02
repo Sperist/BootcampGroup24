@@ -25,12 +25,14 @@ public class PlayerFalling : MonoBehaviour
     }
     void Start()
     {
+        if (SceneManagment.instance.isSceneMapDesign())
+        {
+            firstGravity = PlayerController.instance.gravity;
+            PlayerController.instance.gravity = 0;
+            isHanging = true;
 
-        firstGravity = PlayerController.instance.gravity;
-        PlayerController.instance.gravity = 0;
-        isHanging = true;
-
-        StartCoroutine(FirstFallingCoroutine());
+            StartCoroutine(FirstFallingCoroutine());
+        }
     }
 
     private void Update()
@@ -44,6 +46,8 @@ public class PlayerFalling : MonoBehaviour
 
     private IEnumerator FirstFallingCoroutine()
     {
+        PlayerController.instance.canMove = false;
+
         yield return new WaitForSeconds(5);
 
         PlayerController.instance.gravity = firstGravity;
@@ -70,7 +74,6 @@ public class PlayerFalling : MonoBehaviour
 
         isGettingUP = true;
 
-        PlayerController.instance.canMove = false;
         yield return new WaitForSeconds(7.5f);
 
         isGettingUP = false;
