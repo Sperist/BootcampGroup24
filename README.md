@@ -1,3 +1,5 @@
+![Logo](https://github.com/user-attachments/assets/c9efdf69-079a-489c-8ba0-d22d6dc0df2a)
+
 # Takım İsmi
 
 •	Echo Team
@@ -148,3 +150,57 @@ https://trello.com/invite/b/vXacpV4T/ATTI00213d4d72ab5cfbfd38433cacaba7b568D96AD
   -	Karakter animasyonunda bazı sorunlardan dolayı karakterin modelinde ufak değişiklikler yapıldı.
   -	Birinci bölümden ikinci bölüme geçişte tırmanmamız gerek ağaç modelinin boyutunun daha büyük olması gerektiğine karar verildi.
   -	Diyalogların sesli bir şekilde okunması fikri bazı görevlerin gecikme ihtimaline karşı şimdilik yazılı olarak yapılmasına karar verildi.
+
+# Sprint 3
+
+**Sprint Notları:**
+- **Hedefler:** 3 seviye ayrılan oyunun tüm bölümlerinin mekaniklerinin tamamlanmış olması
+  Sprintte tamamlanması hedeflenen backlog puanı 20
+
+  - **Tamamlanan işler:**
+  -	Tasarımı yapılan ana karakter animasyonlarına ekstra olarak elleriyle ağaçta sallanma, eşya taşıma ve yerden kalkma animasyonları da eklendi.
+  -	Oyunun açılış sahnesindeki ağaçtan düşme animasyonları tamamlandı.
+  -	Ana sahne, kovan sahnesi,, ve köstebek sahnesindeki tüm modellemeler ve çevre düzenleme tamamlandı.
+  -	İstenilen modeller eksiksiz yapıldı.
+  -	Köstebek hareketleri ve animasyonları yapıldı.
+  -	Diyaloglar oluşturuldu ve diyalog sistem tamamlandı.
+  -	Arı hareketleri ve animasyonları tamamlandı.
+  -	Bitiş sahnesi yapıldı.
+
+- **Karşılaşılan sorunlar ve çözümler:**
+  -	Arı hareketlerinin istenldiği olmaması ve basit düzeyde hareketler sergilemesinden dolayı NavMesh ile tekrardan düzenlendi.
+  -	Takımda bazı yapılan mekanik görevlerinin düzgün çalışmamasından dolayı tekrardan yapıldı.
+  -	Takım üyeleri arasındaki hedef ve hırs uyumsuzluğundan dolayı proje için takım üyeleriniin sarfettiği çabalar farklılık gösterdi ve bu sorun çözülemedi.
+  -	Takım üyelerinden bazılarının arasında iletişim kopukluğu oldu ve bu sorun çözülemedi.
+  -	Takım üyeleri arasında paylaştırılan görevlerin yapılmaması ve eksik yapılmasından dolayı bazı takım üyelerinin fazladan görev yapması gerekti.
+	
+• Puan tamamlama mantığı: Proje boyunca tamamlanması gereken backlog puanı 50'dir. Üçüncü Sprint için bitirilmesi istenilen puan sayısı 20 olarak belirlenmiştir ve hedefin gerisinde kalınmıştır.
+
+• Daily Scrum: Whatsapp ve Discord üzerinden görüşmeler sağlanmıştır.
+
+[Daily Scrum Sprint3 dosyası](https://github.com/user-attachments/files/16478319/DailyScrumSprint3.docx)
+
+• Sprint board update: Sprint board screenshotları:
+
+![Trello](https://github.com/user-attachments/assets/055ce493-d0ae-4378-bf62-df91d23a4072)
+
+• Ürün Durumu:
+![Game Foto 1](https://github.com/user-attachments/assets/dba81b24-70f4-4a27-9ec1-319395e5f12c)
+![Game Foto 2](https://github.com/user-attachments/assets/4f94d93e-1b25-4689-b515-52361f565775)
+![Game Foto 3](https://github.com/user-attachments/assets/3ba2a448-eee1-4be1-80d4-40ffeec907c7)
+![Game Foto 4](https://github.com/user-attachments/assets/a0ecfa62-6fd1-4e1f-898f-958a14ce93db)
+
+**Sprint Review:**
+  -	Tüm bölümlerin harita düzenlemesi iyi bir şekilde tamamlandı.
+  -	Tüm ihtiyaç duyulan modeller iyi ve eksiksiz bir şekilde 3D model görevinde çalışan ekip üyemiz tarafından yapıldı.
+  -	Hikaye erkin ve iyi bir şekilde oluşturuldu.
+  -	Ana karaktere ekstra olarak eklenen animasyonlar iyi bir şekilde oluşturuldu.
+  -	Diyalaoglar iyi bir şekilde yazıldı.
+  -	diyalog sistem iyi bir şekilde oluşturuldu.
+  -	Köstebek hareketleri ve animasyonu iyi bir şekilde yapıldı.
+
+**Sprint Retrospective:**
+  -	Düzgün çalışmayan UnlclockMe puzzle mekaniklerinin kaldırılmasına karar verildi.
+  - Düzgün bir şekilde çalışmayan puzzle mekaniklerinin kaldırılmasına karar verildi.
+  -	Oyuncu yönlendirmesinin doğru yapılabilmesi için oyun ekranına talimatlar yazılmasına karar verildi.
+  -	Diyalogların sesli bir şekilde okunması fikri tamamen rafa kaldırılmasına karar verildi.
